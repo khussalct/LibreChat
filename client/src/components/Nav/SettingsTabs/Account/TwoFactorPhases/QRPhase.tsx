@@ -49,7 +49,7 @@ export const QRPhase: React.FC<QRPhaseProps> = ({ secret, otpauthUrl, onNext }) 
             <Input value={secret} readOnly className="font-mono text-lg tracking-wider" />
             <Button
               size="sm"
-              variant="outline"
+              variant="default"
               onClick={handleCopy}
               className={cn('h-auto shrink-0', isCopying ? 'cursor-default' : '')}
             >

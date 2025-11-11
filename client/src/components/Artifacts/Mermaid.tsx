@@ -167,13 +167,13 @@ const MermaidDiagram: React.FC<MermaidDiagramProps> = ({ content }) => {
               />
             </TransformComponent>
             <div className="absolute bottom-2 right-2 flex space-x-2">
-              <Button onClick={() => zoomIn(0.1)} variant="outline" size="icon">
+              <Button onClick={() => zoomIn(0.1)} variant="default" size="icon">
                 <ZoomIn className="h-4 w-4" />
               </Button>
-              <Button onClick={() => zoomOut(0.1)} variant="outline" size="icon">
+              <Button onClick={() => zoomOut(0.1)} variant="default" size="icon">
                 <ZoomOut className="h-4 w-4" />
               </Button>
-              <Button onClick={centerAndFitDiagram} variant="outline" size="icon">
+              <Button onClick={centerAndFitDiagram} variant="default" size="icon">
                 <RefreshCw className="h-4 w-4" />
               </Button>
             </div>

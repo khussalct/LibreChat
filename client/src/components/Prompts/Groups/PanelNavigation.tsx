@@ -29,7 +29,7 @@ function PanelNavigation({
       </div>
       <div className="flex items-center gap-2" role="navigation" aria-label="Pagination">
         <Button
-          variant="outline"
+          variant="default"
           size="sm"
           onClick={onPrevious}
           disabled={!hasPreviousPage || isLoading}
@@ -38,7 +38,7 @@ function PanelNavigation({
           {localize('com_ui_prev')}
         </Button>
         <Button
-          variant="outline"
+          variant="default"
           size="sm"
           onClick={onNext}
           disabled={!hasNextPage || isLoading}

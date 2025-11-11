@@ -147,7 +147,7 @@ const AdminSettings = () => {
         <OGDialogTrigger asChild>
           <Button
             size="sm"
-            variant="outline"
+            variant="default"
             className="mr-2 h-10 w-fit gap-1 border transition-all dark:bg-transparent dark:hover:bg-surface-tertiary sm:m-0"
           >
             <ShieldEllipsis className="cursor-pointer" aria-hidden="true" />

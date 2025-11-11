@@ -306,7 +306,7 @@ export default function MemoryViewer() {
             <MemoryCreateDialog open={createDialogOpen} onOpenChange={setCreateDialogOpen}>
               <OGDialogTrigger asChild>
                 <Button
-                  variant="outline"
+                  variant="default"
                   className="w-full bg-transparent"
                   aria-label={localize('com_ui_create_memory')}
                 >
@@ -382,7 +382,7 @@ export default function MemoryViewer() {
             aria-label="Pagination"
           >
             <Button
-              variant="outline"
+              variant="default"
               size="sm"
               onClick={() => setPageIndex((prev) => Math.max(prev - 1, 0))}
               disabled={pageIndex === 0}
@@ -394,7 +394,7 @@ export default function MemoryViewer() {
               {`${pageIndex + 1} / ${Math.ceil(filteredMemories.length / pageSize)}`}
             </div>
             <Button
-              variant="outline"
+              variant="default"
               size="sm"
               onClick={() =>
                 setPageIndex((prev) =>

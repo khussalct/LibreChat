@@ -95,7 +95,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
     <div className="flex h-full flex-col gap-4">
       <div className="flex flex-wrap items-center gap-2 py-2 sm:gap-4 sm:py-4">
         <Button
-          variant="outline"
+          variant="default"
           onClick={() => {
             setIsDeleting(true);
             const filesToDelete = table
@@ -123,7 +123,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
-              variant="outline"
+              variant="default"
               aria-label={localize('com_files_filter_by')}
               className={cn('min-w-[40px]', isSmallScreen && 'px-2 py-1')}
             >
@@ -246,7 +246,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
         </div>
         <Button
           className="select-none"
-          variant="outline"
+          variant="default"
           size="sm"
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
@@ -255,7 +255,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
         </Button>
         <Button
           className="select-none"
-          variant="outline"
+          variant="default"
           size="sm"
           onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}

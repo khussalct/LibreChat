@@ -109,7 +109,7 @@ const BookmarkTable = () => {
             <BookmarkEditDialog context="BookmarkPanel" open={open} setOpen={setOpen}>
               <OGDialogTrigger asChild>
                 <Button
-                  variant="outline"
+                  variant="default"
                   size="sm"
                   className="w-full gap-2 text-sm"
                   aria-label={localize('com_ui_bookmarks_new')}
@@ -123,7 +123,7 @@ const BookmarkTable = () => {
           </div>
           <div className="flex items-center gap-2" role="navigation" aria-label="Pagination">
             <Button
-              variant="outline"
+              variant="default"
               size="sm"
               onClick={() => setPageIndex((prev) => Math.max(prev - 1, 0))}
               disabled={pageIndex === 0}
@@ -135,7 +135,7 @@ const BookmarkTable = () => {
               {`${pageIndex + 1} / ${Math.ceil(filteredRows.length / pageSize)}`}
             </div>
             <Button
-              variant="outline"
+              variant="default"
               size="sm"
               onClick={() =>
                 setPageIndex((prev) =>

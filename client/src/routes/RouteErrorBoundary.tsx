@@ -162,7 +162,7 @@ export default function RouteErrorBoundary() {
               <span>Stack Trace</span>
               <div className="flex items-center">
                 <Button
-                  variant="outline"
+                  variant="default"
                   size="sm"
                   onClick={handleCopyStack}
                   className="ml-2 px-2 py-1 text-xs"
@@ -218,7 +218,7 @@ export default function RouteErrorBoundary() {
               {localize('com_ui_refresh_page')}
             </Button>
             <Button
-              variant="outline"
+              variant="default"
               onClick={handleDownloadLogs}
               className="w-full sm:w-auto"
               aria-label={localize('com_ui_download_error_logs')}

@@ -31,7 +31,7 @@ export default function List({
       {hasCreateAccess && (
         <div className="flex w-full justify-end">
           <Button
-            variant="outline"
+            variant="default"
             className={`w-full bg-transparent ${isChatRoute ? '' : 'mx-2'}`}
             onClick={() => navigate('/d/prompts/new')}
             aria-label={localize('com_ui_create_prompt')}

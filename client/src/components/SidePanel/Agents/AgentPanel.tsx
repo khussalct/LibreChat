@@ -279,7 +279,7 @@ export default function AgentPanel() {
             <div className="flex w-full gap-2">
               <Button
                 type="button"
-                variant="outline"
+                variant="default"
                 className="w-full justify-center"
                 onClick={() => {
                   reset(getDefaultAgentFormValues());

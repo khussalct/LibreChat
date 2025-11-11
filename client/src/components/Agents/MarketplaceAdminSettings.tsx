@@ -147,7 +147,7 @@ const MarketplaceAdminSettings = () => {
     <OGDialog>
       <OGDialogTrigger asChild>
         <Button
-          variant="outline"
+          variant="default"
           className="relative h-12 rounded-xl border-border-medium font-medium"
         >
           <ShieldEllipsis className="cursor-pointer" aria-hidden="true" />

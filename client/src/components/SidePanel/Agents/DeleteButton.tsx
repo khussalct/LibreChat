@@ -86,7 +86,7 @@ export default function DeleteButton({
       <OGDialogTrigger asChild>
         <Button
           size="sm"
-          variant="outline"
+          variant="default"
           aria-label={localize('com_ui_delete') + ' ' + localize('com_ui_agent')}
           type="button"
         >

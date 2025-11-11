@@ -130,7 +130,7 @@ export default function SharedLinkButton({
                 <Button
                   {...props}
                   onClick={() => updateSharedLink()}
-                  variant="outline"
+                  variant="default"
                   disabled={isUpdateLoading}
                 >
                   {isUpdateLoading ? (
@@ -145,7 +145,7 @@ export default function SharedLinkButton({
             <TooltipAnchor
               description={showQR ? localize('com_ui_hide_qr') : localize('com_ui_show_qr')}
               render={(props) => (
-                <Button {...props} onClick={() => setShowQR(!showQR)} variant="outline">
+                <Button {...props} onClick={() => setShowQR(!showQR)} variant="default">
                   <QrCode className="size-4" />
                 </Button>
               )}

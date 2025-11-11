@@ -92,7 +92,7 @@ export default function ShareButton({
                   <div className="flex-1 break-all text-sm text-text-secondary">{sharedLink}</div>
                   <Button
                     size="sm"
-                    variant="outline"
+                    variant="default"
                     aria-label={localize('com_ui_copy_link')}
                     onClick={() => {
                       if (isCopying) {

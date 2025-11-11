@@ -289,7 +289,7 @@ export default function ArchivedChatsTable({
             </OGDialogTitle>
           </OGDialogHeader>
           <div className="flex justify-end gap-4 pt-4">
-            <Button aria-label="cancel" variant="outline" onClick={() => setIsDeleteOpen(false)}>
+            <Button aria-label="cancel" variant="default" onClick={() => setIsDeleteOpen(false)}>
               {localize('com_ui_cancel')}
             </Button>
             <Button

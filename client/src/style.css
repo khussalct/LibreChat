@@ -54,6 +54,9 @@
   --amber-900: #78350f;
   --amber-950: #451a03;
   --brand-purple: #ab68ff;
+  --solus-orange: #F05A24;
+  --solus-purple: #562DB4;
+  --solus-primary: #755CC0;
   --gizmo-gray-500: #999;
   --gizmo-gray-600: #666;
   --gizmo-gray-950: #0f0f0f;
@@ -104,7 +107,7 @@ html {
   --foreground: 0 0% 3.9%;
   --card: 0 0% 100%;
   --card-foreground: 0 0% 3.9%;
-  --primary: 0 0% 9%;
+  --primary: 251 44% 56%;
   --primary-foreground: 0 0% 98%;
   --secondary: 0 0% 96.1%;
   --secondary-foreground: 0 0% 9%;
@@ -164,8 +167,8 @@ html {
   --foreground: 0 0% 98%;
   --card: 0 0% 3.9%;
   --card-foreground: 0 0% 98%;
-  --primary: 0 0% 98%;
-  --primary-foreground: 0 0% 9%;
+  --primary: 251 44% 56%;
+  --primary-foreground: 0 0% 98%;
   --secondary: 0 0% 14.9%;
   --secondary-foreground: 0 0% 98%;
   --muted: 0 0% 14.9%;
@@ -597,6 +600,26 @@ select {
 
 .precise-tab {
   background: linear-gradient(90deg, #006880 10.79%, #005366 87.08%);
+}
+
+.solus-tab {
+  background: linear-gradient(137deg, #F05A24 0%, #562DB4 100%);
+}
+
+.bg-solus-gradient {
+  background: linear-gradient(137deg, #F05A24 0%, #562DB4 100%);
+}
+
+.bg-solus-primary {
+  background-color: #755CC0;
+}
+
+.text-solus-primary {
+  color: #755CC0;
+}
+
+.border-solus-primary {
+  border-color: #755CC0;
 }
 
 p > small {

@@ -232,7 +232,7 @@ export default function GenericGrantAccessDialog({
   ) : (
     <Button
       size="sm"
-      variant="outline"
+      variant="default"
       aria-label={localize('com_ui_share_var', {
         0: config?.getShareMessage(resourceName),
       })}
@@ -345,7 +345,7 @@ export default function GenericGrantAccessDialog({
             <div className="flex gap-2">
               {resourceId && resourceUrl && (
                 <Button
-                  variant="outline"
+                  variant="default"
                   onClick={() => {
                     if (isCopying) return;
                     copyResourceUrl(setIsCopying);
@@ -371,7 +371,7 @@ export default function GenericGrantAccessDialog({
               <PeoplePickerAdminSettings />
               <OGDialogClose asChild>
                 <Button
-                  variant="outline"
+                  variant="default"
                   onClick={handleCancel}
                   aria-label={localize('com_ui_cancel')}
                 >

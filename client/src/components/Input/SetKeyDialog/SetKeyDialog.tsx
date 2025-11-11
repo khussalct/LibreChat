@@ -129,7 +129,7 @@ const RevokeKeysButton = ({
             </Label>
           </div>
           <OGDialogFooter>
-            <Button variant="outline" onClick={() => setOpen(false)}>
+            <Button variant="default" onClick={() => setOpen(false)}>
               {localize('com_ui_cancel')}
             </Button>
             <Button

@@ -275,7 +275,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
 
       <div className="flex items-center justify-between">
         <Button
-          variant="outline"
+          variant="default"
           size="sm"
           onClick={() => setShowFiles(true)}
           aria-label={localize('com_sidepanel_manage_files')}
@@ -286,7 +286,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
 
         <div className="flex items-center gap-2" role="navigation" aria-label="Pagination">
           <Button
-            variant="outline"
+            variant="default"
             size="sm"
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
@@ -298,7 +298,7 @@ export default function DataTable<TData, TValue>({ columns, data }: DataTablePro
             {`${pageIndex + 1} / ${table.getPageCount()}`}
           </div>
           <Button
-            variant="outline"
+            variant="default"
             size="sm"
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}

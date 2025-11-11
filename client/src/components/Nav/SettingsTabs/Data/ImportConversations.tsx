@@ -110,7 +110,7 @@ function ImportConversations() {
     <div className="flex items-center justify-between">
       <Label id="import-conversation-label">{localize('com_ui_import_conversation_info')}</Label>
       <Button
-        variant="outline"
+        variant="default"
         onClick={handleImportClick}
         onKeyDown={handleKeyDown}
         disabled={isImportDisabled}

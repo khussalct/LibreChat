@@ -187,7 +187,7 @@ const DeleteButton = memo(
     }
     return (
       <Button
-        variant="outline"
+        variant="default"
         onClick={onDelete}
         disabled={disabled}
         className={cn('min-w-[40px] transition-all duration-200', isSmallScreen && 'px-2 py-1')}

@@ -16,7 +16,7 @@ export default function OpenSidebar({
       render={
         <Button
           size="icon"
-          variant="outline"
+          variant="default"
           data-testid="open-sidebar-button"
           aria-label={localize('com_nav_open_sidebar')}
           className={cn(

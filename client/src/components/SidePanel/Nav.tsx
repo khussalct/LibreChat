@@ -64,7 +64,7 @@ function NavContent({ links, isCollapsed, resize }: Omit<NavProps, 'defaultActiv
                         <AccordionPrimitive.Header asChild>
                           <AccordionPrimitive.Trigger asChild>
                             <Button
-                              variant="outline"
+                              variant="default"
                               size="sm"
                               className="w-full justify-start bg-transparent text-text-secondary data-[state=open]:bg-surface-secondary data-[state=open]:text-text-primary"
                               onClick={(e) => {

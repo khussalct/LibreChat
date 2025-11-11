@@ -164,7 +164,7 @@ function Avatar() {
       <div className="flex items-center justify-between">
         <span>{localize('com_nav_profile_picture')}</span>
         <OGDialogTrigger asChild>
-          <Button variant="outline">
+          <Button variant="default">
             <FileImage className="mr-2 flex w-[22px] items-center" />
             <span>{localize('com_nav_change_picture')}</span>
           </Button>
@@ -224,7 +224,7 @@ function Avatar() {
                   <div className="flex items-center space-x-3">
                     <Button
                       type="button"
-                      variant="outline"
+                      variant="default"
                       size="sm"
                       onClick={handleZoomOut}
                       disabled={scale <= 1}
@@ -245,7 +245,7 @@ function Avatar() {
                     />
                     <Button
                       type="button"
-                      variant="outline"
+                      variant="default"
                       size="sm"
                       onClick={handleZoomIn}
                       disabled={scale >= 5}
@@ -260,7 +260,7 @@ function Avatar() {
                 <div className="flex items-center justify-center space-x-3">
                   <Button
                     type="button"
-                    variant="outline"
+                    variant="default"
                     onClick={handleRotate}
                     className="flex items-center space-x-2"
                     aria-label={localize('com_ui_rotate_90')}
@@ -270,7 +270,7 @@ function Avatar() {
                   </Button>
                   <Button
                     type="button"
-                    variant="outline"
+                    variant="default"
                     onClick={handleReset}
                     className="flex items-center space-x-2"
                     aria-label={localize('com_ui_reset_adjustments')}
@@ -290,7 +290,7 @@ function Avatar() {
               <div className="mt-6 flex w-full space-x-3">
                 <Button
                   type="button"
-                  variant="outline"
+                  variant="default"
                   className="flex-1"
                   onClick={resetImage}
                   disabled={isUploading}

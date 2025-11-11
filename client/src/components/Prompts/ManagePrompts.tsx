@@ -21,7 +21,7 @@ export default function ManagePrompts({ className }: { className?: string }) {
 
   return (
     <Button
-      variant="outline"
+      variant="default"
       className={cn(className, 'bg-transparent')}
       onClick={clickHandler}
       aria-label="Manage Prompts"

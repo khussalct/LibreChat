@@ -24,7 +24,7 @@ export const DisableTwoFactorToggle: React.FC<DisableTwoFactorToggleProps> = ({
       </div>
       <div className="flex items-center gap-3">
         <Button
-          variant={enabled ? 'destructive' : 'outline'}
+          variant={enabled ? 'destructive' : 'default'}
           onClick={onChange}
           disabled={disabled}
         >

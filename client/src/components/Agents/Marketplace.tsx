@@ -292,7 +292,7 @@ const AgentMarketplace: React.FC<AgentMarketplaceProps> = ({ className = '' }) =
                           render={
                             <Button
                               size="icon"
-                              variant="outline"
+                              variant="default"
                               data-testid="agents-new-chat-button"
                               aria-label={localize('com_ui_new_chat')}
                               className="rounded-xl border border-border-light bg-surface-secondary p-2 hover:bg-surface-hover max-md:hidden"

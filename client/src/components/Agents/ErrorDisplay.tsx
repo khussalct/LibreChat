@@ -230,7 +230,7 @@ export const ErrorDisplay: React.FC<ErrorDisplayProps> = ({ error, onRetry, cont
           <div className="pt-2">
             <Button
               onClick={onRetry}
-              variant="outline"
+              variant="default"
               size="sm"
               className={cn(
                 'border-red-300 text-red-700 hover:bg-red-50 focus:ring-2 focus:ring-red-500',

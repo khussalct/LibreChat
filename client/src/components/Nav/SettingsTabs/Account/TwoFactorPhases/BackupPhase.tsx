@@ -47,7 +47,7 @@ export const BackupPhase: React.FC<BackupPhaseProps> = ({
         ))}
       </div>
       <div className="flex gap-4">
-        <Button variant="outline" onClick={onDownload} className="flex-1 gap-2">
+        <Button variant="default" onClick={onDownload} className="flex-1 gap-2">
           <Download className="h-4 w-4" />
           <span className="hidden sm:inline">{localize('com_ui_download_backup')}</span>
         </Button>

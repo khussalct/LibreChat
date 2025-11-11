@@ -84,7 +84,7 @@ export default function SelectedPrincipalsList({
                   />
                 )}
                 <Button
-                  variant="outline"
+                  variant="default"
                   onClick={() => onRemoveHandler(share.idOnTheSource!)}
                   className="h-9 w-9 p-0 hover:border-destructive/10 hover:bg-destructive/10 hover:text-destructive"
                   aria-label={localize('com_ui_remove_user', { 0: displayName })}

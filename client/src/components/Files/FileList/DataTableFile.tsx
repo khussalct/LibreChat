@@ -126,7 +126,7 @@ export default function DataTableFile<TData, TValue>({
             {' '}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="ml-auto border border-border-medium">
+                <Button variant="default" className="ml-auto border border-border-medium">
                   <ListFilter className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -255,7 +255,7 @@ export default function DataTableFile<TData, TValue>({
         </div>
         <Button
           className="dark:border-gray-500 dark:hover:bg-gray-600"
-          variant="outline"
+          variant="default"
           size="sm"
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
@@ -264,7 +264,7 @@ export default function DataTableFile<TData, TValue>({
         </Button>
         <Button
           className="dark:border-gray-500 dark:hover:bg-gray-600"
-          variant="outline"
+          variant="default"
           size="sm"
           onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}

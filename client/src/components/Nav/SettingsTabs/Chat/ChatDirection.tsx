@@ -18,7 +18,7 @@ const ChatDirection = () => {
         <span id="chat-direction-label">{localize('com_nav_chat_direction')}</span>
       </div>
       <Button
-        variant="outline"
+        variant="default"
         aria-label={`${localize('com_nav_chat_direction')}: ${localize('com_ui_x_selected', {
           0:
             direction === 'LTR'

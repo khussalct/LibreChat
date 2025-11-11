@@ -53,7 +53,7 @@ export default function NewChat({
           render={
             <Button
               size="icon"
-              variant="outline"
+              variant="default"
               data-testid="close-sidebar-button"
               aria-label={localize('com_nav_close_sidebar')}
               className="rounded-full border-none bg-transparent p-2 hover:bg-surface-hover md:rounded-xl"
@@ -72,7 +72,7 @@ export default function NewChat({
             render={
               <Button
                 size="icon"
-                variant="outline"
+                variant="default"
                 data-testid="nav-new-chat-button"
                 aria-label={localize('com_ui_new_chat')}
                 className="rounded-full border-none bg-transparent p-2 hover:bg-surface-hover md:rounded-xl"

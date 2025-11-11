@@ -52,7 +52,7 @@ export default function AgentMarketplaceButton({
       description={localize('com_agents_marketplace')}
       render={
         <Button
-          variant="outline"
+          variant="default"
           data-testid="nav-agents-marketplace-button"
           aria-label={localize('com_agents_marketplace')}
           className="rounded-full border-none bg-transparent p-2 hover:bg-surface-hover md:rounded-xl"
