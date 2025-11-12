@@ -36,8 +36,8 @@ export default function Header() {
   const isSmallScreen = useMediaQuery('(max-width: 768px)');
 
   return (
-    <div className="sticky top-0 z-10 flex h-14 w-full items-center justify-between bg-white p-2 font-semibold text-text-primary dark:bg-gray-800">
-      <div className="hide-scrollbar flex w-full items-center justify-between gap-2 overflow-x-auto relative min-h-12">
+    <div className="sticky top-0 z-10 h-14 w-full items-center justify-between bg-white p-2 font-semibold text-text-primary dark:bg-gray-800">
+      <div className="hide-scrollbar w-full items-center justify-between gap-2 overflow-x-auto relative min-h-12">
         <div className={"mx-1 flex items-center gap-2" + (navVisible ? ' w-[calc(100%+100px)] absolute' : ' w-full')}>
           <div
             className={`flex items-center gap-2 ${
@@ -54,10 +54,10 @@ export default function Header() {
           <div
             className={`flex items-center gap-2 justify-between ${
               !isSmallScreen ? 'transition-all duration-200 ease-in-out' : ''
-            } ${!navVisible ? 'translate-x-0 w-full' : 'translate-x-[-100px] w-[100% + 100px]'}`}
+            } ${!navVisible ? 'translate-x-0 w-full' : ' w-[calc(100%+100px)] absolute'}`}
           >
             <img
-              src="/assets/solus-logo.jpg"
+              src="assets/solus-logo.jpg"
               alt="Solus"
               className="h-8 w-auto"
             />
