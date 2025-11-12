@@ -54,7 +54,7 @@ export default function Header() {
           <div
             className={`flex items-center gap-2 justify-between ${
               !isSmallScreen ? 'transition-all duration-200 ease-in-out' : ''
-            } ${!navVisible ? 'translate-x-0 w-full' : ' w-[calc(100%+100px)] absolute'}`}
+            } ${!navVisible ? 'translate-x-0 w-full' : ' w-full translate-x-[-100px] '}`}
           >
             <img
               src="assets/solus-logo.jpg"
