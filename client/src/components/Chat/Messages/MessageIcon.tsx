@@ -17,22 +17,18 @@ const MessageIcon = memo(
     agent?: Agent;
   }) => {
     logger.log('icon_data', iconData, assistant, agent);
+
+    // Always show "VA" for assistant/agent messages
+    if (iconData?.isCreatedByUser !== true) {
+      return (
+        <div className="flex h-full w-full items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-600">
+          <span className="text-xs font-bold text-white">VA</span>
+        </div>
+      );
+    }
+
+    // For user messages, use the original Icon component
     const { data: endpointsConfig } = useGetEndpointsQuery();
-
-    const agentName = useMemo(() => agent?.name ?? '', [agent]);
-    const agentAvatar = useMemo(() => agent?.avatar?.filepath ?? '', [agent]);
-    const assistantName = useMemo(() => assistant?.name ?? '', [assistant]);
-    const assistantAvatar = useMemo(() => assistant?.metadata?.avatar ?? '', [assistant]);
-
-    const avatarURL = useMemo(() => {
-      let result = '';
-      if (assistant) {
-        result = assistantAvatar;
-      } else if (agent) {
-        result = agentAvatar;
-      }
-      return result;
-    }, [assistant, agent, assistantAvatar, agentAvatar]);
 
     const iconURL = iconData?.iconURL;
     const endpoint = useMemo(
@@ -45,29 +41,14 @@ const MessageIcon = memo(
       [endpointsConfig, endpoint],
     );
 
-    if (iconData?.isCreatedByUser !== true && iconURL != null && iconURL.includes('http')) {
-      return (
-        <ConvoIconURL
-          iconURL={iconURL}
-          modelLabel={iconData?.modelLabel}
-          context="message"
-          assistantAvatar={assistantAvatar}
-          agentAvatar={agentAvatar}
-          endpointIconURL={endpointIconURL}
-          assistantName={assistantName}
-          agentName={agentName}
-        />
-      );
-    }
-
     return (
       <Icon
         isCreatedByUser={iconData?.isCreatedByUser ?? false}
         endpoint={endpoint}
-        iconURL={avatarURL || endpointIconURL}
+        iconURL={endpointIconURL}
         model={iconData?.model}
-        assistantName={assistantName}
-        agentName={agentName}
+        assistantName=""
+        agentName=""
         size={28.8}
       />
     );
