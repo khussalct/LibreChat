@@ -30,6 +30,17 @@ const App = () => {
     initializeFontSize();
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const textarea = document.getElementById('prompt-textarea');
+      if (textarea) {
+        textarea.placeholder = 'Ask me anything';
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
   // Load theme from environment variables if available
   const envTheme = getThemeFromEnv();
 
